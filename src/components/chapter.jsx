@@ -33,8 +33,8 @@ class ChapterStatus extends Component{
           chapterStatus.text
         }
         {
-          !!(chapterStatus && chapterStatus.status === "lock") && (
-            <span className={"icon-lock"}></span>
+          !!(chapterStatus && chapterStatus.status === "locked") && (
+            <span className={"ml-8 icon-lock"}></span>
           )
         }
       </button>
