@@ -28,7 +28,7 @@ class ChapterStatus extends Component{
 
 
     return (
-      <div className={`chapter__status ${chapterStatus.className}`}>
+      <button className={`chapter__status ${chapterStatus.className}`}>
         {
           chapterStatus.text
         }
@@ -37,7 +37,7 @@ class ChapterStatus extends Component{
             <span className={"icon-lock"}></span>
           )
         }
-      </div>
+      </button>
     )
   }
 }

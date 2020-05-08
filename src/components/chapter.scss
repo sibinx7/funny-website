@@ -58,11 +58,14 @@
     position: absolute;
     bottom: -80px;
     color: #fff;
+    border: none;
+    background: transparent;
     &.chapter__completed{
       background: #219653;
       border-radius: 40px;
       padding: 10px 40px;
-      left: calc(50% - 70px)
+      left: calc(50% - 70px);
+      pointer-events: none;
     }
     &.chapter__play,
     &.chapter__lock{
