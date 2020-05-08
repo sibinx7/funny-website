@@ -1,0 +1,20 @@
+@import "normalize";
+@import "common/bootstrap-grid";
+@import "common/common";
+@import "font-icon";
+@import "font";
+
+body{
+  font-family: 'Coconut Cookies', sans-serif;
+}
+.App{
+  position: relative;
+}
+
+$main_header: 65px;
+$main_sidebar: 160px;
+
+.main__router{
+  padding-top: $main_header;
+  padding-left: $main_sidebar;
+}

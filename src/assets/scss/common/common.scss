@@ -1,0 +1,143 @@
+@import "utilities";
+@import "header";
+@import "sidebar";
+@import "branding";
+
+
+body, body *{
+  box-sizing: border-box;
+}
+
+.text-d-none{
+  text-decoration: none;
+  &:hover,&:active,
+  &:active:focus,
+  &:focus{
+    text-decoration: none;
+  }
+}
+
+.ul__list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon__box{
+  width: 86px;
+  height: 86px;
+  background-image: url("../../svgs/buttons/button-spl.svg");
+  font-size: 36px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 80px;
+  span{
+    font-size: 36px;
+  }
+  &:hover,&:active{
+    text-decoration: none;
+  }
+  &--rect{
+    width: 65px;
+    height: 65px;
+    background-image: url("../../svgs/buttons/button-rect-spl.svg");
+    color: $white;
+    line-height: 66px;
+  }
+}
+button{
+  &.icon__box{
+    border: none;
+    appearance: none;
+    background-color: transparent;
+  }
+}
+
+.sound__tool{
+  font-size: 14px;
+}
+
+.btn{
+  &-square-spl{
+    min-width: 184px;
+    background-image: url("../../images/btn-square-spl.svg");
+    min-height: 65.47px;
+    color: #fff;
+    text-align: center;
+    &.f-20{
+      font-size: 20px;
+    }
+  }
+}
+
+button.btn-reset{
+  background-color: transparent;
+  border: none;
+}
+
+.page{
+  &__top{
+    padding-top: 60px;
+  }
+}
+
+
+$text_colors: ("green": #629E44, "orange": #E58C3A, "dark":#4A4A4A, "blue": #3C62E9,
+"light-brown": #D47013);
+
+@each $name, $color in $text_colors{
+  .text-#{$name}{
+    color: $color
+  }
+}
+
+$font_sizes: (25, 35, 23, 22, 30, 13, 12, 31, 15);
+
+@each $size in $font_sizes{
+  .fs-#{$size}{
+    font-size: #{$size}px;
+  }
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.mb{
+  &-30{
+    margin-bottom: 30px;
+  }
+}
+
+button{
+  outline: none;
+  &:hover,&:active,
+  &:focus,&:active:focus{
+    outline: none;
+    box-shadow: none;
+
+  }
+}
+
+.donation__intro{
+  position: relative;
+  display: flex;
+  margin-left: -15px;
+  margin-right: -15px;
+  .intro__grid{
+    flex-basis: 460px;
+  }
+  .donation__grid{
+
+  }
+}
+
+.px-15{
+  padding-left: 15px;
+  padding-right: 15px;
+}

@@ -1,0 +1,13 @@
+$chapter__gap: 30px;
+.chapters{
+  &__list{
+    display: flex;
+    margin-left: -#{$chapter__gap/2};
+    margin-right: -#{$chapter__gap/2};
+    width: calc(100% + #{$chapter__gap});
+    .chapter__item{
+      padding-left: $chapter__gap/2;
+      padding-right: $chapter__gap/2;
+    }
+  }
+}

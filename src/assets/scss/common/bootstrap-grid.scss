@@ -1,0 +1,53 @@
+$breakpoint_xs: 576px;
+$breakpoint_sm: 768px;
+$breakpoint_md: 992px;
+$breakpoint_lg: 1200px;
+$breakpoint_laptop: 1366px;
+
+$grid_left_gap: 15px;
+$grid_right_gap: 15px;
+.container-fluid{
+  padding-left: $grid_left_gap;
+  padding-right: $grid_right_gap;
+}
+.container{
+  @extend .container-fluid;
+}
+
+.row{
+  margin-left: -#{$grid_left_gap};
+  margin-right: -#{$grid_right_gap};
+  width: calc(100% + #{$grid_right_gap + $grid_left_gap});
+  display: flex;
+}
+
+$break_points: ("":"","xs": $breakpoint_xs, "sm": $breakpoint_sm, "md": $breakpoint_md,
+"lg": $breakpoint_lg, "lp": $breakpoint_laptop);
+
+$grid_number: 12;
+$single_grid_width: 100%/12;
+
+@each $breakpoint, $width in $break_points{
+  @if $breakpoint != "" {
+    @media all and (min-width: $width){
+      @for $i from 1 through $grid_number{
+        .col-#{$breakpoint}-#{$i}{
+          flex-basis: $single_grid_width * $i;
+          max-width: $single_grid_width * $i;
+        }
+      }
+    }
+  }@else{
+    @for $i from 1 through $grid_number{
+      .col-#{$breakpoint}-#{$i}{
+        flex-basis: $single_grid_width * $i;
+        max-width: $single_grid_width * $i;
+      }
+    }
+  }
+}
+
+div[class*="col-"]{
+  padding-left: $grid_left_gap;
+  padding-right: $grid_right_gap;
+}

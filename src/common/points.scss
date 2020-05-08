@@ -1,0 +1,37 @@
+.point{
+  border-radius: 24px;
+  background: #FFF2CF;
+  border: 2px solid #692F0E;
+  padding: 6px 10px;
+  font-size: 18px;
+  letter-spacing: 1.4px;
+  .divider{
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  &--cec{
+    .icon__content{
+      display: flex;
+      align-content: center;
+      .icon{
+        margin-right: 5px;
+      }
+    }
+    .icon{
+      line-height: 0;
+      .icon-ellipse{
+        color: #fff;
+        font-size: 20px;
+        line-height: 20px;
+        position: relative;
+        img{
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          top: 3px;
+          left: 3px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.donation{
+  &__card{
+    background: #fff;
+    padding: 50px  40px 25px;
+    max-width: 476px;
+    border-radius: 30px;
+    position: relative;
+    text-align: center;
+    .donation__top{
+      border-radius: 40px;
+      color: #fff;
+      background: #B75928;
+      width: 234px;
+      height: 42px;
+      text-align: center;
+      vertical-align: middle;
+      padding: 10px 15px;
+      position: absolute;
+      top: -21px;
+      left: calc(50% - 117px)
+    }
+  }
+  &__actions{
+    .btn-spl{
+      + .btn-spl{
+        margin-left: 24px;
+      }
+    }
+  }
+  &__content{
+    &__info{
+      max-width: 400px;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-bottom: 20px;
+    }
+  }
+}

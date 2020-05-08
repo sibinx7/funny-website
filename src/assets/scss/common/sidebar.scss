@@ -1,0 +1,77 @@
+@import "branding";
+.user{
+  &__profile{
+    background: #fff;
+    display: block;
+    width: 86px;
+    height: 86px;
+    text-align: center;
+  }
+}
+
+.sidebar{
+  width: 160px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 260px;
+  @media all and (max-width: 767px){
+    width: 100%;
+    flex-direction: row;
+    bottom: 0;
+    left: 0;
+    padding-top: 10px;
+    top: auto;
+    height: auto;
+    z-index: 15!important;
+    .sidebar__bottom{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+  &__menu{
+    @media all and (max-width: 767px){
+      display: flex;
+    }
+    li{
+      margin-bottom: 30px;
+      text-align: center;
+      a{
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        color: $white;
+        &:hover,&:active,
+        &:focus:active{
+          text-decoration: none;
+        }
+        .icon__box{
+          margin-bottom: 20px;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        .menu__text{
+          font-weight: 300;
+          @media all and (max-width: 767px){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  &__profile{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+  }
+  &__settings{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}

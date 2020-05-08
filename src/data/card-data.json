@@ -1,0 +1,48 @@
+[
+  {
+    "chapter": 1,
+    "category": "General Quiz",
+    "points": {
+      "base": 10,
+      "completed": 10
+    },
+    "status": "completed",
+    "details": {
+      "answered_questions": 3,
+      "total_questions": 3,
+      "type": "Questions"
+    }
+  },
+  {
+    "chapter": 2,
+    "category": "Landscape Quiz",
+    "points": {
+      "base": 10,
+      "completed": 0
+    },
+    "status": "play",
+    "details": {
+      "answered_questions": 7,
+      "total_questions": 12,
+      "type": "Elements",
+      "completed": 0,
+      "total": 20
+    }
+  },
+  {
+    "chapter": 3,
+    "category": "World Quiz",
+    "points": {
+      "base": 10,
+      "completed": 10
+    },
+    "status": "locked",
+    "details": {
+      "answered_questions": 12,
+      "total_questions": 12,
+      "type": "Regions",
+      "completed": 0,
+      "total": 20
+    }
+  }
+]
