@@ -25,8 +25,6 @@ class ChapterStatus extends Component{
 
     const chapterStatus = chapterStatusObject[status];
 
-    console.log(chapterStatus)
-    console.log("Chapter status...")
 
 
     return (

@@ -10,6 +10,7 @@ header.header{
   -webkit-align-content: center;
   align-content: center;
   padding: 15px 25px;
+  z-index: 4;
 }
 .header{
   &__menu{
@@ -22,6 +23,22 @@ header.header{
         margin-left: 25px;
       }
     }
+    @media all and (max-width: 767px){
+      .icon__content{
+        .icon{
+          display: none;
+        }
+      }
+      .point{
+        .label,.divider{
+          display: none;
+        }
+      }
+    }
+    margin-right: 15px;
+    li + li {
+      margin-left: 10px;
+    }
   }
 }
 .header__right{
@@ -32,4 +49,22 @@ header.header{
   width: 120px;
   display: flex;
   justify-content: center;
+  @media all and (max-width: 767px){
+    width: auto;
+    justify-content: flex-start;
+  }
+}
+
+.header__left{
+  @media all and (max-width: 767px){
+    .user__profile{
+      width: 54px;
+      height: 54px;
+      display: block;
+      padding: 10px;
+      img{
+        max-width: 100%;
+      }
+    }
+  }
 }

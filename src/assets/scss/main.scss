@@ -17,4 +17,14 @@ $main_sidebar: 160px;
 .main__router{
   padding-top: $main_header;
   padding-left: $main_sidebar;
+  @media all and (max-width: 767px){
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.chapters__list{
+  .carousel{
+    width: 100%;
+  }
 }

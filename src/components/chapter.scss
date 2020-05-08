@@ -8,6 +8,14 @@
   padding: 20px 20px 60px 20px;
   display: flex;
   flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media all and (max-width: 419px){
+    width: 100%;
+  }
+  @media all and (min-width: 992px) and (max-width: 1199px){
+    width: 100%;
+  }
   *{
     z-index: 3;
     position: relative;
@@ -87,5 +95,14 @@
   }
   &__intro{
     text-align: center;
+  }
+  &__navigation{
+    display: flex;
+    justify-content: center;
+    button{
+      border: none;
+      background: none;
+      appearance: none;
+    }
   }
 }

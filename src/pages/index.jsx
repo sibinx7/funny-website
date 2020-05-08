@@ -4,7 +4,13 @@ import Donation from "../components/donation";
 import ChapterData from "../data/card-data.json";
 import Chapter from "../components/chapter";
 
+
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from "pure-react-carousel";
+import 'pure-react-carousel/dist/react-carousel.es.css';
+
 import "./index.scss"
+import ChapterList from "../components/chapter-list";
+
 
 class HomeIndex extends Component{
   render() {
@@ -30,17 +36,7 @@ class HomeIndex extends Component{
           </div>
           {/* end First Section */}
 
-          {/* Card Section */}
-          <div className="chapters__list">
-            {
-              ChapterData.map((data, index) => {
-                return <div className={"chapter__item"} key={data.id || index}>
-                  <Chapter data={data} key={data.id || index}/>
-                </div>
-              })
-            }
-          </div>
-          {/* end Card Section */}
+          <ChapterList/>
         </div>
         {/*<div className="donation__intro">*/}
         {/*</div>*/}
